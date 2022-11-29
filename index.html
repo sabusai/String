@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charest="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handon 5</title>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <div class="container">
+    <div class="item"><h1>JavaScript</h1>
+    <h1>Strings</h1>
+    </div>
+    <div class="list">
+    <div class="box1">
+    <h2>Count Characters</h2>
+    <pre>
+    const arr = [0,0];
+  for(let i=0; i < S.length; i++){
+  if(S.charCodeAt(i)===65){
+  arr[0] += 1;
+          
+  }
+  else if(S.charCodeAt(i)===68){
+  arr[1] += 1;
+  }
+  }
+      
+  return arr;  
+ </pre></div>
+ <div class="box2">
+ <h2>Count the Heads</h2>
+ <pre>
+ var Count_Occ = (s) => 
+{
+   let count = 0;
+  var arr2 = []
+  for(i=0; i <= s.length; i++) {
+  count = 0;
+  for(j=0; j < s.length; j++) {
+  if(s[i] == s[j]) {
+  count++
+  }
+  }
+  if(count >= 2) {
+
+  if( !arr2.includes(s[i] + count)) {
+  a = s[i] + count
+  arr2.push(a)
+  }
+  } 
+  }
+  
+  return arr2.sort().join("")      
+};
+ </pre>
+ </div>
+ <div class="box3">
+ <h2>Count the Vowels</h2>
+ <pre>
+var Count_Vowels= (S) => 
+{
+ let vowels = 0;
+        
+  for(let i=0; i < S.length; i++){
+  if(S[i].toLowerCase()==='a'||S[i].toLowerCase()==='e'||S[i].toLowerCase()==='i'||S[i].toLowerCase()==='o'||S[i].toLowerCase()==='u'){
+  vowels += 1;
+  }
+  }
+        
+  return vowels;     
+};
+</pre>
+ </div>
+ <div class="box4">
+ <h2>Concatenate the Strings</h2>
+ <pre>
+ var Concatenate_Strings = (S1, S2) => 
+{
+   return S1+S2;    
+};
+</pre>
+ </div>
+ <div class="box5">
+ <h2>Find Length</h2>
+ <pre>
+ const findLength = (S) => 
+{
+   return S.length;  
+};
+</pre>
+ </div>
+ <div class="box6">
+ <h2>Find the Winner</h2>
+ <pre>
+ var Game_Winner = (S) => 
+{
+  let Aditya = 0;
+  let Danish = 0;
+  for(let i=0; i < S.length; i++){
+  if(S[i]==="A"){
+  Aditya += 1;
+  }
+  else{
+  Danish += 1;
+  }
+  }
+
+  if(Aditya>Danish){
+  return "Aditya"
+  }
+
+  else if(Danish>Aditya){
+  return "Danish"
+  }
+  
+  else{
+  return "Draw"
+  }
+  }
+</pre>
+ </div>
+ <div class="box7">
+ <h2>Join Strings</h2>
+ <pre>
+const joinStrings = (S, P) => 
+{
+ return S+P
+};
+</pre>
+ </div>
+ <div class="box8">
+ <h2>Plaindrome Check</h2>
+ <pre>
+ var Palin_Check = (str) =>
+{
+	str = str.toLowerCase();
+  for(let i=0; i < parseInt((str.length)/2); i++){
+  if(str[i]!==str[str.length-1-i]){
+  return "False"
+  }
+  
+  }
+  return "True"
+}
+</pre>
+ </div>
+ <div class="box9">
+ <h2>Reverse the String</h2>
+ <pre>
+ var Reverse_String = (str) => 
+{
+  const tempArr = []
+  let reversedStr = ''
+  for(let i=str.length-1; i >= 0; i--){
+    tempArr.push(str.charAt(i))
+  }
+  
+  for(let i=0; i < tempArr.length; i++){
+    reversedStr += tempArr[i]
+  }
+  
+  return reversedStr
+};
+</pre>
+ </div>
+ <div class="box10">
+ <h2>Match the Strings</h2>
+ <pre>
+  var String_Match = (S1,S2) => 
+{
+  if(S1===S2){
+  return "YES"
+  }
+  else{
+  return "NO"
+  }    
+};         
+</pre>
+ </div>
+ <div class="box11">
+ <h2>String Replace</h2>
+ <pre>
+ var Replace = (S, pattern , text) => 
+{
+  let ans = ""
+  let index = S.search(pattern);
+  for(let i=0; i < index; i++){
+    ans += S[i]
+  }
+  ans += text;
+  for(let i=index+pattern.length; i < S.length; i++){
+    ans += S[i]
+  }
+  return ans
+};
+</pre>
+ </div>
+ <div class="box12">
+ <h2>Split the String</h2>
+ <pre>
+ var Split_the_string = (S) => 
+{
+  return S.split(' ')
+};
+</pre>
+ </div>
+ <div class="box13">
+ <h2>Count the Vowels and Consonants</h2>
+ <pre>
+var Count_Vowels= (S) => 
+{
+ let vowels = 0;
+  for(let i=0; i < S.length; i++){
+  if(S[i].toLowerCase()==='a'||S[i].toLowerCase()==='e'||S[i].toLowerCase()==='i'||S[i].toLowerCase()==='o'||S[i].toLowerCase()==='u'){
+  vowels += 1;
+  }
+  }
+  
+  return vowels;    
+};
+var Count_Consonants= (S) => 
+{
+  return S.length-Count_Vowels(S);     
+};
+ 
+</pre>
+ </div>
+    </div>
+    </div>
+    </body>
+    </html>
